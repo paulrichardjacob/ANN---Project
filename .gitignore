@@ -1,5 +1,5 @@
 # =========================
-# Python bytecode & caches
+# Python bytecode & cache
 # =========================
 __pycache__/
 *.py[cod]
@@ -12,42 +12,12 @@ env/
 ENV/
 
 # =========================
-# Conda
-# =========================
-.conda/
-conda-meta/
-
-# =========================
-# Packaging / build files
-# =========================
-build/
-dist/
-*.egg-info/
-.eggs/
-*.egg
-
-# =========================
-# Logs & coverage
-# =========================
-*.log
-.coverage
-.coverage.*
-htmlcov/
-.cache/
-.pytest_cache/
-.tox/
-
-# =========================
-# Jupyter
-# =========================
-.ipynb_checkpoints/
-
-# =========================
-# IDEs & editors
+# OS / IDE
 # =========================
 .vscode/
 .idea/
-.spyproject/
+.DS_Store
+Thumbs.db
 
 # =========================
 # Environment variables
@@ -56,27 +26,29 @@ htmlcov/
 .env.*
 
 # =========================
-# OS / Editor junk
+# Data (keep structure, ignore content)
 # =========================
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 
 # =========================
-# Databases
+# Models (keep structure, ignore content)
 # =========================
-*.db
-*.rdb
+models/*
+!models/.gitkeep
 
 # =========================
-# ML-specific
+# Reports / figures
 # =========================
-models/
-data/
+reports/figures/*
+!reports/figures/.gitkeep
 
 # =========================
 # Misc
 # =========================
+*.log
 *.tmp
 *.bak
+uv.lock
